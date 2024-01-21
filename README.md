@@ -48,7 +48,7 @@ public List<Employee> SelectAll()
 
 2. **Web API**
 
-Web API is used for accessing and altering the data in the database. To accessing the database, the client should use with **Get,Post,Put** and **Delete** request.
+Web API is used for accessing and altering the data in the database. To accessing the data, the client should use with **Get,Post,Put** and **Delete** request.
 
 For example :
 

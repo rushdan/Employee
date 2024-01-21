@@ -10,7 +10,7 @@ Users can view, create, edit and delete of freelancers
 
 Software and Programming Language :
 1. Visual Studio 2019
-2. C# (ASP.Net MVC Core 2.0)
+2. C# (ASP.Net MVC Core 3.1)
 3. Microsoft SQL Server 2017
 4. DataTable for table design view
 

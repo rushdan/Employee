@@ -1,0 +1,50 @@
+﻿@model List<EmployeeManager.ApiClient.Models.Employee>
+
+<h2>List of Employees</h2>
+
+<h3 class="message">@TempData["Message"]</h3>
+
+@Html.ActionLink("Insert", "Insert", "EmployeeManager", null, new { @class = "linkbutton" })
+
+<br />
+<br />
+
+
+            <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable1" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Employee ID</th>
+                            <th>Username</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Skillset</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                        <tr>
+                            <td>@item.UsernameID</td>
+                            <td>@item.Username</td>
+                            <td>@item.Email</td>
+                            <td>@item.PhoneNumber</td>
+                            <td>@item.Skillsets</td>
+
+
+                            <td>
+                                @Html.ActionLink("Update", "Update", "EmployeeManager", new { id = item.UsernameID }, new { @class = "linkbutton" })
+                            </td>
+
+                            <td>
+                                @Html.ActionLink("Delete", "Delete", "EmployeeManager", new { id = item.UsernameID }, new { @class = "linkbutton" })
+                            </td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+

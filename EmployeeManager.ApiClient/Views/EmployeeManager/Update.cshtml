@@ -1,0 +1,74 @@
+﻿@model Employee
+
+<h2>Update Existing Employee</h2>
+
+<h3 class="message">@ViewBag.Message</h3>
+
+@using (Html.BeginForm("Update", "EmployeeManager", FormMethod.Post))
+{
+<table class="table table-bordered">
+    <tr>
+        <td class="right">@Html.LabelFor(m => m.UsernameID): </td>
+        <td>
+            @Html.HiddenFor(m => m.UsernameID)<span>@Model.UsernameID</span>
+        </td>
+    </tr>
+    <tr>
+        <td class="right">
+            @Html.LabelFor(m => m.Username) :
+        </td>
+        <td>
+            @Html.TextBoxFor(m => m.Username)
+            @Html.ValidationMessageFor(m => m.Username, null, new { @class = "message" })
+        </td>
+    </tr>
+    <tr>
+        <td class="right">
+            @Html.LabelFor(m => m.Email) :
+        </td>
+        <td>
+            @Html.TextBoxFor(m => m.Email)
+            @Html.ValidationMessageFor(m => m.Email, null, new { @class = "message" })
+        </td>
+    </tr>
+
+    <tr>
+        <td class="right">
+            @Html.LabelFor(m => m.PhoneNumber) :
+        </td>
+        <td>
+            @Html.TextBoxFor(m => m.PhoneNumber)
+            @Html.ValidationMessageFor(m => m.PhoneNumber, null, new { @class = "message" })
+        </td>
+    </tr>
+
+    <tr>
+        <td class="right">
+            @Html.LabelFor(m => m.Skillsets) :
+        </td>
+        <td>
+            @Html.TextBoxFor(m => m.Skillsets)
+            @Html.ValidationMessageFor(m => m.Skillsets, null, new { @class = "message" })
+        </td>
+    </tr>
+
+    <tr>
+        <td class="right">
+            @Html.LabelFor(m => m.Hobby) :
+        </td>
+        <td>
+            @Html.TextBoxFor(m => m.Hobby)
+            @Html.ValidationMessageFor(m => m.Hobby, null, new { @class = "message" })
+        </td>
+    </tr>
+
+    <tr>
+        <td colspan="2">
+            <button type="submit">Save</button>
+        </td>
+    </tr>
+
+</table>
+
+  <a asp-controller="EmployeeManager" asp-action="List">Back to Employee List</a>
+}

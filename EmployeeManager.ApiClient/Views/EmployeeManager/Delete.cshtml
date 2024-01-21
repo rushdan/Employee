@@ -1,0 +1,72 @@
+﻿@model Employee
+
+
+<h2>Detete New Employee</h2>
+
+<h3 class="message">Warning: You are about to delete an employee record</h3>
+
+@using (Html.BeginForm("Delete", "EmployeeManager", FormMethod.Post))
+{
+    @Html.HiddenFor(m => m.UsernameID)
+
+    <table class="table table-bordered">
+        <tr>
+            <td colspan="2">
+                @Html.HiddenFor(m => m.UsernameID)
+            </td>
+        </tr>
+
+        <tr>
+            <td class="right">
+                @Html.LabelFor(m => m.Username) :
+            </td>
+            <td>
+                @Model.Username
+            </td>
+        </tr>
+
+        <tr>
+            <td class="right">
+                @Html.LabelFor(m => m.Email) :
+            </td>
+            <td>
+                @Model.Email
+            </td>
+        </tr>
+
+        <tr>
+            <td class="right">
+                @Html.LabelFor(m => m.PhoneNumber) :
+            </td>
+            <td>
+                @Model.PhoneNumber
+            </td>
+        </tr>
+
+        <tr>
+            <td class="right">
+                @Html.LabelFor(m => m.Skillsets) :
+            </td>
+            <td>
+                @Model.Skillsets
+            </td>
+        </tr>
+
+        <tr>
+            <td class="right">
+                @Html.LabelFor(m => m.Hobby) :
+            </td>
+            <td>
+                @Model.Hobby
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <button type="submit">Delete</button>
+            </td>
+        </tr>
+    </table>
+}
+
+<a asp-controller="EmployeeManager" asp-action="List">Back to Employee List</a>

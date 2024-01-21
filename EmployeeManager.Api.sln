@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33927.289
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManager.Api", "EmployeeManager.Api\EmployeeManager.Api.csproj", "{399B315D-C86D-481A-BBC0-98F3216170F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManager.ApiClient", "EmployeeManager.ApiClient\EmployeeManager.ApiClient.csproj", "{E450F157-F6D9-4D31-998C-6EDAC1D116EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{399B315D-C86D-481A-BBC0-98F3216170F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{399B315D-C86D-481A-BBC0-98F3216170F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{399B315D-C86D-481A-BBC0-98F3216170F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{399B315D-C86D-481A-BBC0-98F3216170F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E450F157-F6D9-4D31-998C-6EDAC1D116EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E450F157-F6D9-4D31-998C-6EDAC1D116EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E450F157-F6D9-4D31-998C-6EDAC1D116EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E450F157-F6D9-4D31-998C-6EDAC1D116EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {231B09D2-2F0E-4AF1-ADE6-E3DA3A96BB0E}
+	EndGlobalSection
+EndGlobal

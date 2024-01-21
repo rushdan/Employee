@@ -96,3 +96,7 @@ Following below is **HTML** code for represent the table layout for listing the 
 </tr>
 }
 ```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
